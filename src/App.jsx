@@ -14,11 +14,17 @@ function App() {
 import Headers from "./myComponents/Headers"
 import Bodies from "./myComponents/Bodies"
 
-function App() {
+const App = () => {
+
+  const onClickButton = () => {
+    alert();
+  }
+
   return (
     <div>
       <Headers/>
       <Bodies/>
+      <button onClick={onClickButton}>ボタン</button>
     </div>
   );
 }
